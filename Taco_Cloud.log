@@ -1,0 +1,847 @@
+2020-03-09 11:31:26.953  INFO 14552 --- [main] tacos.HomePageBrowserTest                : Starting HomePageBrowserTest on DESKTOP-VF7SRCM with PID 14552 (started by Alien in F:\a学习\JavaEE\ssm框架学习\Spring实战\spring实战5_1)
+2020-03-09 11:31:26.967  INFO 14552 --- [main] tacos.HomePageBrowserTest                : No active profile set, falling back to default profiles: default
+2020-03-09 11:31:28.369  INFO 14552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-09 11:31:28.478  INFO 14552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93ms. Found 4 JPA repository interfaces.
+2020-03-09 11:31:29.105  INFO 14552 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-09 11:31:29.940  INFO 14552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-03-09 11:31:29.952  INFO 14552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-09 11:31:29.952  INFO 14552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-09 11:31:29.953  INFO 14552 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-03-09 11:31:29.954  INFO 14552 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-03-09 11:31:29.954  INFO 14552 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-03-09 11:31:29.957  INFO 14552 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-03-09 11:31:30.162  INFO 14552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-09 11:31:30.162  INFO 14552 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3113 ms
+2020-03-09 11:31:31.020 DEBUG 14552 --- [main] o.hibernate.jpa.internal.util.LogHelper  : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: sun.misc.Launcher$AppClassLoader@18b4aac2
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/F:/a%e5%ad%a6%e4%b9%a0/JavaEE/ssm%e6%a1%86%e6%9e%b6%e5%ad%a6%e4%b9%a0/Spring%e5%ae%9e%e6%88%98/spring%e5%ae%9e%e6%88%985_1/target/test-classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		tacos.Ingredient
+		tacos.Order
+		tacos.Taco
+		tacos.User]
+	Mapping files names []
+	Properties []
+2020-03-09 11:31:31.040 DEBUG 14552 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2020-03-09 11:31:31.043 DEBUG 14552 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2020-03-09 11:31:31.047 DEBUG 14552 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2020-03-09 11:31:31.137  INFO 14552 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-03-09 11:31:31.140 DEBUG 14552 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-03-09 11:31:31.301 DEBUG 14552 --- [main] o.hibernate.service.spi.ServiceBinding   : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2020-03-09 11:31:31.320 DEBUG 14552 --- [main] o.h.c.internal.RegionFactoryInitiator    : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2020-03-09 11:31:31.323 DEBUG 14552 --- [main] o.h.c.internal.RegionFactoryInitiator    : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2020-03-09 11:31:31.352  INFO 14552 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-09 11:31:31.399 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@64440065
+2020-03-09 11:31:31.399 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@64440065
+2020-03-09 11:31:31.399 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@64440065
+2020-03-09 11:31:31.400 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@464aeb09
+2020-03-09 11:31:31.401 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@365cef67
+2020-03-09 11:31:31.402 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@3214bad
+2020-03-09 11:31:31.405 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@641ed324
+2020-03-09 11:31:31.405 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@641ed324
+2020-03-09 11:31:31.405 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@641ed324
+2020-03-09 11:31:31.407 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@7308c820
+2020-03-09 11:31:31.407 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@7308c820
+2020-03-09 11:31:31.407 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7308c820
+2020-03-09 11:31:31.410 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@c0c8f96
+2020-03-09 11:31:31.410 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@c0c8f96
+2020-03-09 11:31:31.410 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@c0c8f96
+2020-03-09 11:31:31.412 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@3d40498a
+2020-03-09 11:31:31.413 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@3d40498a
+2020-03-09 11:31:31.413 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3d40498a
+2020-03-09 11:31:31.415 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@1e120628
+2020-03-09 11:31:31.416 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@1e120628
+2020-03-09 11:31:31.416 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@1e120628
+2020-03-09 11:31:31.417 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@dc1fadd
+2020-03-09 11:31:31.418 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@dc1fadd
+2020-03-09 11:31:31.418 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@dc1fadd
+2020-03-09 11:31:31.419 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@78479f2b
+2020-03-09 11:31:31.420 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@78479f2b
+2020-03-09 11:31:31.420 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@78479f2b
+2020-03-09 11:31:31.422 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@45b7c97f
+2020-03-09 11:31:31.422 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@45b7c97f
+2020-03-09 11:31:31.424 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@65844c96
+2020-03-09 11:31:31.424 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@65844c96
+2020-03-09 11:31:31.426 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@8077c97
+2020-03-09 11:31:31.426 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@8077c97
+2020-03-09 11:31:31.427 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@5d5d3a5c
+2020-03-09 11:31:31.428 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@305b43ca
+2020-03-09 11:31:31.430 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@54c11750
+2020-03-09 11:31:31.430 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@54c11750
+2020-03-09 11:31:31.431 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@1753475d
+2020-03-09 11:31:31.431 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1753475d
+2020-03-09 11:31:31.433 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@6a5dd083
+2020-03-09 11:31:31.433 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@6a5dd083
+2020-03-09 11:31:31.435 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1e6bd263
+2020-03-09 11:31:31.435 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1e6bd263
+2020-03-09 11:31:31.437 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7f5ce33e
+2020-03-09 11:31:31.437 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7f5ce33e
+2020-03-09 11:31:31.439 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@4ef5dd23
+2020-03-09 11:31:31.439 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@4ef5dd23
+2020-03-09 11:31:31.441 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@66a82a13
+2020-03-09 11:31:31.442 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@66a82a13
+2020-03-09 11:31:31.444 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@570b2057
+2020-03-09 11:31:31.444 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@570b2057
+2020-03-09 11:31:31.447 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@33f4c769
+2020-03-09 11:31:31.447 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@33f4c769
+2020-03-09 11:31:31.450 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@1c68d0db
+2020-03-09 11:31:31.450 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@1c68d0db
+2020-03-09 11:31:31.452 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@629b780f
+2020-03-09 11:31:31.452 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@629b780f
+2020-03-09 11:31:31.455 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@5fb7ab9c
+2020-03-09 11:31:31.455 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5fb7ab9c
+2020-03-09 11:31:31.455 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5fb7ab9c
+2020-03-09 11:31:31.457 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4ce267cc
+2020-03-09 11:31:31.460 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@4899799b
+2020-03-09 11:31:31.460 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4899799b
+2020-03-09 11:31:31.460 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4899799b
+2020-03-09 11:31:31.461 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7c91fe86
+2020-03-09 11:31:31.463 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@53bb71e5
+2020-03-09 11:31:31.463 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@53bb71e5
+2020-03-09 11:31:31.465 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@4cb00fa5
+2020-03-09 11:31:31.465 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4cb00fa5
+2020-03-09 11:31:31.466 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@51ed2f68
+2020-03-09 11:31:31.467 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@51ed2f68
+2020-03-09 11:31:31.468 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@22ae905f
+2020-03-09 11:31:31.468 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@22ae905f
+2020-03-09 11:31:31.469 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@51d8f2f2
+2020-03-09 11:31:31.469 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@51d8f2f2
+2020-03-09 11:31:31.470 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@4f235e8e
+2020-03-09 11:31:31.471 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@586843bc
+2020-03-09 11:31:31.472 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@586843bc
+2020-03-09 11:31:31.472 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@586843bc
+2020-03-09 11:31:31.473 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4264beb8
+2020-03-09 11:31:31.473 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4264beb8
+2020-03-09 11:31:31.473 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4264beb8
+2020-03-09 11:31:31.475 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@7ead1d80
+2020-03-09 11:31:31.476 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@4d43a1b7
+2020-03-09 11:31:31.478 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@362a561e
+2020-03-09 11:31:31.478 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@362a561e
+2020-03-09 11:31:31.478 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@362a561e
+2020-03-09 11:31:31.480 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@5cf0673d
+2020-03-09 11:31:31.480 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@5cf0673d
+2020-03-09 11:31:31.480 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@5cf0673d
+2020-03-09 11:31:31.481 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@5546e754
+2020-03-09 11:31:31.482 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@6a6da47a
+2020-03-09 11:31:31.484 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@3babcaed
+2020-03-09 11:31:31.485 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3babcaed
+2020-03-09 11:31:31.486 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@2c579202
+2020-03-09 11:31:31.488 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@6b09ce57
+2020-03-09 11:31:31.488 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6b09ce57
+2020-03-09 11:31:31.491 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@5bb2fb2b
+2020-03-09 11:31:31.491 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5bb2fb2b
+2020-03-09 11:31:31.491 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@56d6a1b1
+2020-03-09 11:31:31.492 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@5e69cf07
+2020-03-09 11:31:31.495 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@4e4f4092
+2020-03-09 11:31:31.500 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@7a1371
+2020-03-09 11:31:31.500 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7a1371
+2020-03-09 11:31:31.501 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@73aaec54
+2020-03-09 11:31:31.501 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@239b98cb
+2020-03-09 11:31:31.502 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@117b2cc6
+2020-03-09 11:31:31.502 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6def0632
+2020-03-09 11:31:31.502 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@49038f97
+2020-03-09 11:31:31.502 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@36211bbc
+2020-03-09 11:31:31.502 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@7ef41ca2
+2020-03-09 11:31:31.502 DEBUG 14552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6b3f4bd8
+2020-03-09 11:31:31.527 DEBUG 14552 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@25218a4d] into BootstrapContext; was [null]
+2020-03-09 11:31:31.527 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@25218a4d) [was null]
+2020-03-09 11:31:31.528 DEBUG 14552 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@6b3d9c38] into BootstrapContext; was [null]
+2020-03-09 11:31:31.529 DEBUG 14552 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@426710f0] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@5c5a91b4]
+2020-03-09 11:31:31.553 DEBUG 14552 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@25218a4d]
+2020-03-09 11:31:31.553 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@25218a4d]
+2020-03-09 11:31:31.568 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2020-03-09 11:31:31.569 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2020-03-09 11:31:31.570 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2020-03-09 11:31:31.570 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2020-03-09 11:31:31.571 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2020-03-09 11:31:31.573 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2020-03-09 11:31:31.573 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2020-03-09 11:31:31.575 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-03-09 11:31:31.577 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2020-03-09 11:31:31.578 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2020-03-09 11:31:31.579 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2020-03-09 11:31:31.580 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2020-03-09 11:31:31.580 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-03-09 11:31:31.581 DEBUG 14552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2020-03-09 11:31:31.590  INFO 14552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-09 11:31:32.566  INFO 14552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-09 11:31:32.574 DEBUG 14552 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Database ->
+       name : MySQL
+    version : 5.7.28
+      major : 5
+      minor : 7
+2020-03-09 11:31:32.574 DEBUG 14552 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.48 ( Revision: 29734982609c32d3ab7e5cac2e6acee69ff6b4aa )
+      major : 5
+      minor : 1
+2020-03-09 11:31:32.574 DEBUG 14552 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : JDBC version : 4.0
+2020-03-09 11:31:32.590  INFO 14552 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-03-09 11:31:32.619 DEBUG 14552 --- [main] o.h.e.j.env.spi.IdentifierHelperBuilder  : JDBC driver metadata reported database stores quoted identifiers in more than one case
+2020-03-09 11:31:32.624 DEBUG 14552 --- [main] o.h.e.j.env.spi.IdentifierHelperBuilder  : IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2020-03-09 11:31:32.887 DEBUG 14552 --- [main] o.h.boot.model.relational.Namespace      : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2020-03-09 11:31:32.893 DEBUG 14552 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4dd1d2bb] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@47198524]
+2020-03-09 11:31:32.959 DEBUG 14552 --- [main] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: tacos.Ingredient
+2020-03-09 11:31:32.986 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-03-09 11:31:32.994 DEBUG 14552 --- [main] o.h.cfg.annotations.EntityBinder         : Import with entity name Ingredient
+2020-03-09 11:31:33.001 DEBUG 14552 --- [main] o.h.cfg.annotations.EntityBinder         : Bind entity tacos.Ingredient on table ingredient
+2020-03-09 11:31:33.025 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(ingredient), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.030 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2020-03-09 11:31:33.032 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Ingredient:id]
+2020-03-09 11:31:33.035 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2020-03-09 11:31:33.039 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property id
+2020-03-09 11:31:33.042 DEBUG 14552 --- [main] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, assigned, , ...)
+2020-03-09 11:31:33.043 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(ingredient), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.043 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property name with lazy=false
+2020-03-09 11:31:33.044 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Ingredient:name]
+2020-03-09 11:31:33.044 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for name
+2020-03-09 11:31:33.044 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property name
+2020-03-09 11:31:33.044 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(ingredient), mappingColumn=type, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.044 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property type with lazy=false
+2020-03-09 11:31:33.044 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Ingredient:type]
+2020-03-09 11:31:33.047 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for type
+2020-03-09 11:31:33.047 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property type
+2020-03-09 11:31:33.048 DEBUG 14552 --- [main] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: tacos.Order
+2020-03-09 11:31:33.049 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-03-09 11:31:33.049 DEBUG 14552 --- [main] o.h.cfg.annotations.EntityBinder         : Import with entity name Order
+2020-03-09 11:31:33.049 DEBUG 14552 --- [main] o.h.cfg.annotations.EntityBinder         : Bind entity tacos.Order on table taco_order
+2020-03-09 11:31:33.059 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.059 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2020-03-09 11:31:33.060 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Order:id]
+2020-03-09 11:31:33.060 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2020-03-09 11:31:33.060 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property id
+2020-03-09 11:31:33.062 DEBUG 14552 --- [main] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2020-03-09 11:31:33.062 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=cccvv, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.062 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property ccCVV with lazy=false
+2020-03-09 11:31:33.063 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Order:ccCVV]
+2020-03-09 11:31:33.063 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for ccCVV
+2020-03-09 11:31:33.063 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property ccCVV
+2020-03-09 11:31:33.064 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=cc_expiration, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.064 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property ccExpiration with lazy=false
+2020-03-09 11:31:33.064 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Order:ccExpiration]
+2020-03-09 11:31:33.065 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for ccExpiration
+2020-03-09 11:31:33.065 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property ccExpiration
+2020-03-09 11:31:33.067 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=cc_number, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.067 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property ccNumber with lazy=false
+2020-03-09 11:31:33.068 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Order:ccNumber]
+2020-03-09 11:31:33.068 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for ccNumber
+2020-03-09 11:31:33.068 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property ccNumber
+2020-03-09 11:31:33.071 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=delivery_city, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.071 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property deliveryCity with lazy=false
+2020-03-09 11:31:33.071 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Order:deliveryCity]
+2020-03-09 11:31:33.071 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for deliveryCity
+2020-03-09 11:31:33.072 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property deliveryCity
+2020-03-09 11:31:33.080 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=delivery_name, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.082 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property deliveryName with lazy=false
+2020-03-09 11:31:33.082 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Order:deliveryName]
+2020-03-09 11:31:33.083 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for deliveryName
+2020-03-09 11:31:33.085 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property deliveryName
+2020-03-09 11:31:33.086 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=delivery_state, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.088 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property deliveryState with lazy=false
+2020-03-09 11:31:33.088 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Order:deliveryState]
+2020-03-09 11:31:33.088 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for deliveryState
+2020-03-09 11:31:33.088 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property deliveryState
+2020-03-09 11:31:33.090 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=delivery_street, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.090 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property deliveryStreet with lazy=false
+2020-03-09 11:31:33.090 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Order:deliveryStreet]
+2020-03-09 11:31:33.090 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for deliveryStreet
+2020-03-09 11:31:33.090 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property deliveryStreet
+2020-03-09 11:31:33.091 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=delivery_zip, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.093 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property deliveryZip with lazy=false
+2020-03-09 11:31:33.093 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Order:deliveryZip]
+2020-03-09 11:31:33.093 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for deliveryZip
+2020-03-09 11:31:33.093 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property deliveryZip
+2020-03-09 11:31:33.094 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=placed_at, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.094 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property placedAt with lazy=false
+2020-03-09 11:31:33.094 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Order:placedAt]
+2020-03-09 11:31:33.094 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for placedAt
+2020-03-09 11:31:33.094 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property placedAt
+2020-03-09 11:31:33.098 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.112 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.112 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=tacos_key, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.115 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3JoinColumn{logicalColumnName='tacos_KEY', referencedColumn='null', mappedBy='null'}
+2020-03-09 11:31:33.116 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+2020-03-09 11:31:33.116 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+2020-03-09 11:31:33.117 DEBUG 14552 --- [main] o.h.cfg.annotations.CollectionBinder     : Collection role: tacos.Order.tacos
+2020-03-09 11:31:33.121 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property tacos
+2020-03-09 11:31:33.121 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+2020-03-09 11:31:33.121 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco_order), mappingColumn=user, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.123 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property user
+2020-03-09 11:31:33.123 DEBUG 14552 --- [main] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: tacos.Taco
+2020-03-09 11:31:33.124 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-03-09 11:31:33.124 DEBUG 14552 --- [main] o.h.cfg.annotations.EntityBinder         : Import with entity name Taco
+2020-03-09 11:31:33.124 DEBUG 14552 --- [main] o.h.cfg.annotations.EntityBinder         : Bind entity tacos.Taco on table taco
+2020-03-09 11:31:33.126 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.126 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2020-03-09 11:31:33.127 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Taco:id]
+2020-03-09 11:31:33.127 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2020-03-09 11:31:33.127 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property id
+2020-03-09 11:31:33.127 DEBUG 14552 --- [main] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2020-03-09 11:31:33.127 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco), mappingColumn=created_at, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.127 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property createdAt with lazy=false
+2020-03-09 11:31:33.128 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Taco:createdAt]
+2020-03-09 11:31:33.128 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for createdAt
+2020-03-09 11:31:33.128 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property createdAt
+2020-03-09 11:31:33.128 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.128 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.128 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco), mappingColumn=ingredients_key, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.129 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3JoinColumn{logicalColumnName='ingredients_KEY', referencedColumn='null', mappedBy='null'}
+2020-03-09 11:31:33.129 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+2020-03-09 11:31:33.129 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+2020-03-09 11:31:33.129 DEBUG 14552 --- [main] o.h.cfg.annotations.CollectionBinder     : Collection role: tacos.Taco.ingredients
+2020-03-09 11:31:33.129 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property ingredients
+2020-03-09 11:31:33.130 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(taco), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.130 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property name with lazy=false
+2020-03-09 11:31:33.130 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.Taco:name]
+2020-03-09 11:31:33.130 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for name
+2020-03-09 11:31:33.130 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property name
+2020-03-09 11:31:33.131 DEBUG 14552 --- [main] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: tacos.User
+2020-03-09 11:31:33.132 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-03-09 11:31:33.132 DEBUG 14552 --- [main] o.h.cfg.annotations.EntityBinder         : Import with entity name User
+2020-03-09 11:31:33.132 DEBUG 14552 --- [main] o.h.cfg.annotations.EntityBinder         : Bind entity tacos.User on table user
+2020-03-09 11:31:33.134 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.135 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2020-03-09 11:31:33.135 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.User:id]
+2020-03-09 11:31:33.135 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2020-03-09 11:31:33.136 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property id
+2020-03-09 11:31:33.136 DEBUG 14552 --- [main] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2020-03-09 11:31:33.136 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=city, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.136 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property city with lazy=false
+2020-03-09 11:31:33.136 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.User:city]
+2020-03-09 11:31:33.136 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for city
+2020-03-09 11:31:33.137 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property city
+2020-03-09 11:31:33.137 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=fullname, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.138 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property fullname with lazy=false
+2020-03-09 11:31:33.138 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.User:fullname]
+2020-03-09 11:31:33.138 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for fullname
+2020-03-09 11:31:33.138 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property fullname
+2020-03-09 11:31:33.139 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.139 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property password with lazy=false
+2020-03-09 11:31:33.139 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.User:password]
+2020-03-09 11:31:33.140 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for password
+2020-03-09 11:31:33.140 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property password
+2020-03-09 11:31:33.140 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=phone_number, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.140 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property phoneNumber with lazy=false
+2020-03-09 11:31:33.140 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.User:phoneNumber]
+2020-03-09 11:31:33.141 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for phoneNumber
+2020-03-09 11:31:33.141 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property phoneNumber
+2020-03-09 11:31:33.141 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=state, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.141 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property state with lazy=false
+2020-03-09 11:31:33.141 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.User:state]
+2020-03-09 11:31:33.141 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for state
+2020-03-09 11:31:33.141 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property state
+2020-03-09 11:31:33.142 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=street, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.142 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property street with lazy=false
+2020-03-09 11:31:33.142 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.User:street]
+2020-03-09 11:31:33.142 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for street
+2020-03-09 11:31:33.142 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property street
+2020-03-09 11:31:33.142 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=username, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.142 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property username with lazy=false
+2020-03-09 11:31:33.142 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.User:username]
+2020-03-09 11:31:33.143 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for username
+2020-03-09 11:31:33.143 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property username
+2020-03-09 11:31:33.143 DEBUG 14552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=zip, insertable=true, updatable=true, unique=false}
+2020-03-09 11:31:33.143 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property zip with lazy=false
+2020-03-09 11:31:33.143 DEBUG 14552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [tacos.User:zip]
+2020-03-09 11:31:33.143 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for zip
+2020-03-09 11:31:33.143 DEBUG 14552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property zip
+2020-03-09 11:31:33.144 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2020-03-09 11:31:33.144 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for name
+2020-03-09 11:31:33.144 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for type
+2020-03-09 11:31:33.145 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for ccCVV
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for ccExpiration
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for ccNumber
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for deliveryCity
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for deliveryName
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for deliveryState
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for deliveryStreet
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for deliveryZip
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for placedAt
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for createdAt
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for name
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for city
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for fullname
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for password
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for phoneNumber
+2020-03-09 11:31:33.146 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for state
+2020-03-09 11:31:33.147 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for street
+2020-03-09 11:31:33.147 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for username
+2020-03-09 11:31:33.147 DEBUG 14552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for zip
+2020-03-09 11:31:33.154 DEBUG 14552 --- [main] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [ingredient]
+2020-03-09 11:31:33.154 DEBUG 14552 --- [main] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [taco_order]
+2020-03-09 11:31:33.154 DEBUG 14552 --- [main] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [taco]
+2020-03-09 11:31:33.154 DEBUG 14552 --- [main] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [user]
+2020-03-09 11:31:33.154 DEBUG 14552 --- [main] org.hibernate.cfg.CollectionSecondPass   : Second pass for collection: tacos.Taco.ingredients
+2020-03-09 11:31:33.154 DEBUG 14552 --- [main] o.h.cfg.annotations.CollectionBinder     : Binding as ManyToMany: tacos.Taco.ingredients
+2020-03-09 11:31:33.166 DEBUG 14552 --- [main] org.hibernate.cfg.CollectionSecondPass   : Mapped collection key: taco_id, element: ingredients_id
+2020-03-09 11:31:33.166 DEBUG 14552 --- [main] org.hibernate.cfg.CollectionSecondPass   : Second pass for collection: tacos.Order.tacos
+2020-03-09 11:31:33.166 DEBUG 14552 --- [main] o.h.cfg.annotations.CollectionBinder     : Binding as ManyToMany: tacos.Order.tacos
+2020-03-09 11:31:33.166 DEBUG 14552 --- [main] org.hibernate.cfg.CollectionSecondPass   : Mapped collection key: order_id, element: tacos_id
+2020-03-09 11:31:33.167 DEBUG 14552 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: tacos.Ingredient
+2020-03-09 11:31:33.170 DEBUG 14552 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: tacos.Taco
+2020-03-09 11:31:33.171 DEBUG 14552 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: tacos.User
+2020-03-09 11:31:33.171 DEBUG 14552 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: tacos.Taco
+2020-03-09 11:31:33.171 DEBUG 14552 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: tacos.Order
+2020-03-09 11:31:33.174 DEBUG 14552 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: tacos.Ingredient
+2020-03-09 11:31:33.175 DEBUG 14552 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: tacos.Taco
+2020-03-09 11:31:33.175 DEBUG 14552 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: tacos.User
+2020-03-09 11:31:33.175 DEBUG 14552 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: tacos.Taco
+2020-03-09 11:31:33.175 DEBUG 14552 --- [main] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: tacos.Order
+2020-03-09 11:31:33.218 DEBUG 14552 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum tacos.Ingredient$Type
+2020-03-09 11:31:33.228 DEBUG 14552 --- [main] o.hibernate.internal.SessionFactoryImpl  : Building session factory
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : SessionFactory name : null
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Automatic flush during beforeCompletion(): enabled
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Automatic session close at end of transaction: disabled
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Statistics: disabled
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Deleted entity synthetic identifier rollback: disabled
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Default entity-mode: pojo
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Allow initialization of lazy state outside session : disabled
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Using BatchFetchStyle : LEGACY
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Default batch fetch size: -1
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Maximum outer join fetch depth: 2
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Default null ordering: NONE
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Order SQL updates by primary key: disabled
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Order SQL inserts for batching: disabled
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : multi-tenancy strategy : NONE
+2020-03-09 11:31:33.229 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : JTA Track by Thread: enabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Query language substitutions: {}
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Named query checking : enabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Second-level cache: disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Second-level query cache: disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Second-level query cache factory: null
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Second-level cache region prefix: null
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Optimize second-level cache for minimal puts: disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Structured second-level cache entries: disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Second-level cache direct-reference entries: disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Automatic eviction of collection cache: disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : JDBC batch size: 15
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : JDBC batch updates for versioned data: enabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Scrollable result sets: enabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Wrap result sets: disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : JDBC3 getGeneratedKeys(): enabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : JDBC result set fetch size: null
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Connection release mode: ON_CLOSE
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : Generate SQL with comments: disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : JPA compliance - query : disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : JPA compliance - closed-handling : disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : JPA compliance - lists : disabled
+2020-03-09 11:31:33.230 DEBUG 14552 --- [main] org.hibernate.cfg.Settings               : JPA compliance - transactions : disabled
+2020-03-09 11:31:33.295 DEBUG 14552 --- [main] o.h.j.e.i.CallbackBuilderLegacyImpl      : Adding placedAt as PrePersist callback for entity tacos.Order
+2020-03-09 11:31:33.299 DEBUG 14552 --- [main] o.h.j.e.i.CallbackBuilderLegacyImpl      : Adding createdAt as PrePersist callback for entity tacos.Taco
+2020-03-09 11:31:33.299 DEBUG 14552 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum tacos.Ingredient$Type
+2020-03-09 11:31:33.312 DEBUG 14552 --- [main] o.hibernate.internal.SessionFactoryImpl  : Session factory constructed with filter configurations : {}
+2020-03-09 11:31:33.313 DEBUG 14552 --- [main] o.hibernate.internal.SessionFactoryImpl  : Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, hibernate.id.new_generator_mappings=true, java.specification.version=1.8, file.encoding.pkg=sun.io, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@3f45dfec, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=GBK, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=H:\IDE\IntelliJ IDEA 2019.2.3\lib\idea_rt.jar;H:\IDE\IntelliJ IDEA 2019.2.3\plugins\junit\lib\junit5-rt.jar;H:\IDE\IntelliJ IDEA 2019.2.3\plugins\junit\lib\junit-rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;F:\a学习\JavaEE\ssm框架学习\Spring实战\spring实战5_1\target\test-classes;F:\a学习\JavaEE\ssm框架学习\Spring实战\spring实战5_1\target\classes;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\2.2.4.RELEASE\spring-boot-starter-thymeleaf-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\thymeleaf\thymeleaf-spring5\3.0.11.RELEASE\thymeleaf-spring5-3.0.11.RELEASE.jar;C:\Users\Alien\.m2\repository\org\thymeleaf\thymeleaf\3.0.11.RELEASE\thymeleaf-3.0.11.RELEASE.jar;C:\Users\Alien\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\Alien\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\Alien\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Alien\.m2\repository\org\thymeleaf\extras\thymeleaf-extras-java8time\3.0.4.RELEASE\thymeleaf-extras-java8time-3.0.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.2.4.RELEASE\spring-boot-starter-web-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.2.4.RELEASE\spring-boot-starter-json-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.2\jackson-databind-2.10.2.jar;C:\Users\Alien\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.2\jackson-annotations-2.10.2.jar;C:\Users\Alien\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.2\jackson-core-2.10.2.jar;C:\Users\Alien\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.10.2\jackson-datatype-jdk8-2.10.2.jar;C:\Users\Alien\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.2\jackson-datatype-jsr310-2.10.2.jar;C:\Users\Alien\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.10.2\jackson-module-parameter-names-2.10.2.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.2.4.RELEASE\spring-boot-starter-tomcat-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.30\tomcat-embed-core-9.0.30.jar;C:\Users\Alien\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.30\tomcat-embed-el-9.0.30.jar;C:\Users\Alien\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.30\tomcat-embed-websocket-9.0.30.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.2.4.RELEASE\spring-boot-starter-validation-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\Alien\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-web\5.2.3.RELEASE\spring-web-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-beans\5.2.3.RELEASE\spring-beans-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-webmvc\5.2.3.RELEASE\spring-webmvc-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-context\5.2.3.RELEASE\spring-context-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-expression\5.2.3.RELEASE\spring-expression-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.2.4.RELEASE\spring-boot-starter-test-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-test\2.2.4.RELEASE\spring-boot-test-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.2.4.RELEASE\spring-boot-test-autoconfigure-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\Alien\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\Alien\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\Alien\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\Alien\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\Alien\.m2\repository\org\junit\jupiter\junit-jupiter\5.5.2\junit-jupiter-5.5.2.jar;C:\Users\Alien\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\Alien\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Alien\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\Alien\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.2\junit-jupiter-params-5.5.2.jar;C:\Users\Alien\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\Alien\.m2\repository\org\junit\vintage\junit-vintage-engine\5.5.2\junit-vintage-engine-5.5.2.jar;C:\Users\Alien\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Alien\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\Alien\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Alien\.m2\repository\org\mockito\mockito-junit-jupiter\3.1.0\mockito-junit-jupiter-3.1.0.jar;C:\Users\Alien\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\Alien\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Alien\.m2\repository\org\mockito\mockito-core\3.1.0\mockito-core-3.1.0.jar;C:\Users\Alien\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.6\byte-buddy-agent-1.10.6.jar;C:\Users\Alien\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Alien\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Alien\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-core\5.2.3.RELEASE\spring-core-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-jcl\5.2.3.RELEASE\spring-jcl-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-test\5.2.3.RELEASE\spring-test-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\xmlunit\xmlunit-core\2.6.3\xmlunit-core-2.6.3.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-devtools\2.2.4.RELEASE\spring-boot-devtools-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot\2.2.4.RELEASE\spring-boot-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.2.4.RELEASE\spring-boot-autoconfigure-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Alien\.m2\repository\net\bytebuddy\byte-buddy\1.10.6\byte-buddy-1.10.6.jar;C:\Users\Alien\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Alien\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Alien\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Alien\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Alien\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Alien\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Alien\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Alien\.m2\repository\com\squareup\okhttp3\okhttp\3.14.6\okhttp-3.14.6.jar;C:\Users\Alien\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Alien\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.36.0\htmlunit-driver-2.36.0.jar;C:\Users\Alien\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.36.0\htmlunit-2.36.0.jar;C:\Users\Alien\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\Alien\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\Alien\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\Alien\.m2\repository\org\apache\commons\commons-text\1.7\commons-text-1.7.jar;C:\Users\Alien\.m2\repository\org\apache\httpcomponents\httpmime\4.5.10\httpmime-4.5.10.jar;C:\Users\Alien\.m2\repository\org\apache\httpcomponents\httpclient\4.5.10\httpclient-4.5.10.jar;C:\Users\Alien\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Alien\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Alien\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.36.0\htmlunit-core-js-2.36.0.jar;C:\Users\Alien\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.36.0\neko-htmlunit-2.36.0.jar;C:\Users\Alien\.m2\repository\xerces\xercesImpl\2.12.0\xercesImpl-2.12.0.jar;C:\Users\Alien\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\Alien\.m2\repository\net\sourceforge\htmlunit\htmlunit-cssparser\1.5.0\htmlunit-cssparser-1.5.0.jar;C:\Users\Alien\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Alien\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;C:\Users\Alien\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Alien\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.25.v20191220\websocket-client-9.4.25.v20191220.jar;C:\Users\Alien\.m2\repository\org\eclipse\jetty\jetty-client\9.4.25.v20191220\jetty-client-9.4.25.v20191220.jar;C:\Users\Alien\.m2\repository\org\eclipse\jetty\jetty-http\9.4.25.v20191220\jetty-http-9.4.25.v20191220.jar;C:\Users\Alien\.m2\repository\org\eclipse\jetty\jetty-xml\9.4.25.v20191220\jetty-xml-9.4.25.v20191220.jar;C:\Users\Alien\.m2\repository\org\eclipse\jetty\jetty-util\9.4.25.v20191220\jetty-util-9.4.25.v20191220.jar;C:\Users\Alien\.m2\repository\org\eclipse\jetty\jetty-io\9.4.25.v20191220\jetty-io-9.4.25.v20191220.jar;C:\Users\Alien\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.25.v20191220\websocket-common-9.4.25.v20191220.jar;C:\Users\Alien\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.25.v20191220\websocket-api-9.4.25.v20191220.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\2.2.4.RELEASE\spring-boot-starter-actuator-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\2.2.4.RELEASE\spring-boot-actuator-autoconfigure-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-actuator\2.2.4.RELEASE\spring-boot-actuator-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\io\micrometer\micrometer-core\1.3.2\micrometer-core-1.3.2.jar;C:\Users\Alien\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.11\HdrHistogram-2.1.11.jar;C:\Users\Alien\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Alien\.m2\repository\org\projectlombok\lombok\1.18.10\lombok-1.18.10.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.2.4.RELEASE\spring-boot-starter-data-jpa-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.2.4.RELEASE\spring-boot-starter-aop-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\aspectj\aspectjweaver\1.9.5\aspectjweaver-1.9.5.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.2.4.RELEASE\spring-boot-starter-jdbc-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\com\zaxxer\HikariCP\3.4.2\HikariCP-3.4.2.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-jdbc\5.2.3.RELEASE\spring-jdbc-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\Alien\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\Alien\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\Alien\.m2\repository\org\hibernate\hibernate-core\5.4.10.Final\hibernate-core-5.4.10.Final.jar;C:\Users\Alien\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\Alien\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\Alien\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Alien\.m2\repository\org\jboss\jandex\2.1.1.Final\jandex-2.1.1.Final.jar;C:\Users\Alien\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Alien\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\Alien\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\Alien\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar;C:\Users\Alien\.m2\repository\org\glassfish\jaxb\txw2\2.3.2\txw2-2.3.2.jar;C:\Users\Alien\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.8\istack-commons-runtime-3.0.8.jar;C:\Users\Alien\.m2\repository\org\jvnet\staxex\stax-ex\1.8.1\stax-ex-1.8.1.jar;C:\Users\Alien\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.16\FastInfoset-1.2.16.jar;C:\Users\Alien\.m2\repository\org\springframework\data\spring-data-jpa\2.2.4.RELEASE\spring-data-jpa-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\data\spring-data-commons\2.2.4.RELEASE\spring-data-commons-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-orm\5.2.3.RELEASE\spring-orm-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-tx\5.2.3.RELEASE\spring-tx-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-aspects\5.2.3.RELEASE\spring-aspects-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter\2.2.4.RELEASE\spring-boot-starter-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.2.4.RELEASE\spring-boot-starter-logging-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Alien\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Alien\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.12.1\log4j-to-slf4j-2.12.1.jar;C:\Users\Alien\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;C:\Users\Alien\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\Alien\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Alien\.m2\repository\org\yaml\snakeyaml\1.25\snakeyaml-1.25.jar;C:\Users\Alien\.m2\repository\org\springframework\boot\spring-boot-starter-security\2.2.4.RELEASE\spring-boot-starter-security-2.2.4.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\spring-aop\5.2.3.RELEASE\spring-aop-5.2.3.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\security\spring-security-config\5.2.1.RELEASE\spring-security-config-5.2.1.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\security\spring-security-web\5.2.1.RELEASE\spring-security-web-5.2.1.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\security\spring-security-test\5.2.1.RELEASE\spring-security-test-5.2.1.RELEASE.jar;C:\Users\Alien\.m2\repository\org\springframework\security\spring-security-core\5.2.1.RELEASE\spring-security-core-5.2.1.RELEASE.jar;C:\Users\Alien\.m2\repository\mysql\mysql-connector-java\5.1.48\mysql-connector-java-5.1.48.jar;H:\IDE\IntelliJ IDEA 2019.2.3\lib\idea_rt.jar, java.vm.vendor=Oracle Corporation, LOG_PATH=/var/logs/, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, user.variant=, java.vendor.url=http://java.oracle.com/, catalina.useNaming=false, user.timezone=Asia/Shanghai, os.name=Windows 10, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, user.country=CN, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_231\jre\bin, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit4 tacos.HomePageBrowserTest, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@7c69e1e1, javax.persistence.sharedCache.mode=UNSPECIFIED, sun.cpu.endian=little, user.home=C:\Users\Alien, user.language=zh, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files\Java\jdk1.8.0_231\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_231-b11, user.name=Alien, path.separator=;, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_231\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, LOG_FILE=Taco_Cloud.log, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\Alien\AppData\Local\Temp\, catalina.home=C:\Users\Alien\AppData\Local\Temp\tomcat.2759674963447794565.0, java.version=1.8.0_231, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=F:\a学习\JavaEE\ssm框架学习\Spring实战\spring实战5_1, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=14552, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, catalina.base=C:\Users\Alien\AppData\Local\Temp\tomcat.2759674963447794565.0, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@7b52b18a, java.library.path=C:\Program Files\Java\jdk1.8.0_231\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Java\jdk1.8.0_231\jre\bin;C:\Program Files\Java and JEE\apache-tomcat-9.0.24\lib;C:\Program Files\Java and JEE\apache-tomcat-9.0.24\bin;C:\Program Files\Java and JEE\apache-maven-3.6.1\bin;C:\Program Files\mingw64\bin;H:\IDE\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Alien\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;H:\IDE\IntelliJ IDEA 2019.2.3\bin;;C:\Users\Alien\AppData\Local\GitHubDesktop\bin;C:\Users\Alien\AppData\Roaming\npm;C:\Program Files\mingw64\bin;;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.231-b11, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, hibernate.connection.datasource=HikariDataSource (HikariPool-1), java.class.version=52.0}
+2020-03-09 11:31:33.331 DEBUG 14552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2020-03-09 11:31:33.332 DEBUG 14552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2020-03-09 11:31:33.332 DEBUG 14552 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-09 11:31:33.332 DEBUG 14552 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2020-03-09 11:31:33.333 DEBUG 14552 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-09 11:31:33.333 DEBUG 14552 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-09 11:31:33.339 DEBUG 14552 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2020-03-09 11:31:33.339 DEBUG 14552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-09 11:31:33.339 DEBUG 14552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-09 11:31:33.339 DEBUG 14552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-09 11:31:33.339 DEBUG 14552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-09 11:31:33.340 DEBUG 14552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-09 11:31:33.341 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.Order] is safe
+2020-03-09 11:31:33.341 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.Order
+2020-03-09 11:31:33.359 DEBUG 14552 --- [main] o.h.v.i.m.d.ConstraintDescriptorImpl     : Adding composing constraint: ConstraintDescriptorImpl{annotation=j.v.c.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={groups=[Ljava.lang.Class;@6cde0c69, message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@6f4d2294}, constraintType=GENERIC, valueUnwrapping=DEFAULT}.
+2020-03-09 11:31:33.368 DEBUG 14552 --- [main] o.h.v.i.m.d.ConstraintDescriptorImpl     : Adding composing constraint: ConstraintDescriptorImpl{annotation=j.v.c.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={groups=[Ljava.lang.Class;@350342e0, message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@5d297d4d}, constraintType=GENERIC, valueUnwrapping=DEFAULT}.
+2020-03-09 11:31:33.368 DEBUG 14552 --- [main] o.h.v.i.m.d.ConstraintDescriptorImpl     : Adding composing constraint: ConstraintDescriptorImpl{annotation=j.v.c.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={groups=[Ljava.lang.Class;@1dd44289, message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@6cc56b32}, constraintType=GENERIC, valueUnwrapping=DEFAULT}.
+2020-03-09 11:31:33.368 DEBUG 14552 --- [main] o.h.v.i.m.d.ConstraintDescriptorImpl     : Adding composing constraint: ConstraintDescriptorImpl{annotation=j.v.c.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={groups=[Ljava.lang.Class;@43fe2008, message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@552bee2f}, constraintType=GENERIC, valueUnwrapping=DEFAULT}.
+2020-03-09 11:31:33.369 DEBUG 14552 --- [main] o.h.v.i.m.d.ConstraintDescriptorImpl     : Adding composing constraint: ConstraintDescriptorImpl{annotation=j.v.c.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={groups=[Ljava.lang.Class;@6a543e09, message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@2d0f548a}, constraintType=GENERIC, valueUnwrapping=DEFAULT}.
+2020-03-09 11:31:33.371 DEBUG 14552 --- [main] o.h.v.i.m.d.ConstraintDescriptorImpl     : Adding composing constraint: ConstraintDescriptorImpl{annotation=o.h.v.c.LuhnCheck, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={startIndex=0, payload=[Ljava.lang.Class;@37caecda, endIndex=2147483647, groups=[Ljava.lang.Class;@7be7c052, ignoreNonDigitCharacters=false, checkDigitIndex=-1, message={org.hibernate.validator.constraints.LuhnCheck.message}}, constraintType=GENERIC, valueUnwrapping=DEFAULT}.
+2020-03-09 11:31:33.408 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.User] is safe
+2020-03-09 11:31:33.408 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.User
+2020-03-09 11:31:33.413 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.Taco] is safe
+2020-03-09 11:31:33.413 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.Taco
+2020-03-09 11:31:33.417 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.Ingredient] is safe
+2020-03-09 11:31:33.417 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.Ingredient
+2020-03-09 11:31:33.422 DEBUG 14552 --- [main] org.hibernate.secure.spi.JaccIntegrator  : Skipping JACC integration as it was not enabled
+2020-03-09 11:31:33.423 DEBUG 14552 --- [main] o.hibernate.internal.SessionFactoryImpl  : Instantiated session factory
+2020-03-09 11:31:33.423 DEBUG 14552 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4dd1d2bb] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@71734463]
+2020-03-09 11:31:33.465 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.Order] is safe
+2020-03-09 11:31:33.465 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.Order
+2020-03-09 11:31:33.482 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.Order] is safe
+2020-03-09 11:31:33.482 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.Order
+2020-03-09 11:31:33.727 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.User] is safe
+2020-03-09 11:31:33.727 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.User
+2020-03-09 11:31:33.727 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.User] is safe
+2020-03-09 11:31:33.727 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.User
+2020-03-09 11:31:33.750 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.Taco] is safe
+2020-03-09 11:31:33.750 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.Taco
+2020-03-09 11:31:33.750 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.Taco] is safe
+2020-03-09 11:31:33.750 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.Taco
+2020-03-09 11:31:33.759 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.Ingredient] is safe
+2020-03-09 11:31:33.759 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.Ingredient
+2020-03-09 11:31:33.760 DEBUG 14552 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum tacos.Ingredient$Type
+2020-03-09 11:31:33.760 DEBUG 14552 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum tacos.Ingredient$Type
+2020-03-09 11:31:33.760 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [tacos.Ingredient] is safe
+2020-03-09 11:31:33.760 DEBUG 14552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : tacos.Ingredient
+2020-03-09 11:31:33.768 DEBUG 14552 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum tacos.Ingredient$Type
+2020-03-09 11:31:33.769 DEBUG 14552 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum tacos.Ingredient$Type
+2020-03-09 11:31:33.781 DEBUG 14552 --- [main] o.h.p.c.AbstractCollectionPersister      : Static SQL for collection: tacos.Order.tacos
+2020-03-09 11:31:33.781 DEBUG 14552 --- [main] o.h.p.c.AbstractCollectionPersister      :  Row insert: insert into taco_order_tacos (order_id, tacos_id) values (?, ?)
+2020-03-09 11:31:33.781 DEBUG 14552 --- [main] o.h.p.c.AbstractCollectionPersister      :  Row update: update taco_order_tacos set tacos_id=? where order_id=? and tacos_id=?
+2020-03-09 11:31:33.781 DEBUG 14552 --- [main] o.h.p.c.AbstractCollectionPersister      :  Row delete: delete from taco_order_tacos where order_id=? and tacos_id=?
+2020-03-09 11:31:33.781 DEBUG 14552 --- [main] o.h.p.c.AbstractCollectionPersister      :  One-shot delete: delete from taco_order_tacos where order_id=?
+2020-03-09 11:31:33.782 DEBUG 14552 --- [main] o.h.p.c.AbstractCollectionPersister      : Static SQL for collection: tacos.Taco.ingredients
+2020-03-09 11:31:33.782 DEBUG 14552 --- [main] o.h.p.c.AbstractCollectionPersister      :  Row insert: insert into taco_ingredients (taco_id, ingredients_id) values (?, ?)
+2020-03-09 11:31:33.782 DEBUG 14552 --- [main] o.h.p.c.AbstractCollectionPersister      :  Row update: update taco_ingredients set ingredients_id=? where taco_id=? and ingredients_id=?
+2020-03-09 11:31:33.782 DEBUG 14552 --- [main] o.h.p.c.AbstractCollectionPersister      :  Row delete: delete from taco_ingredients where taco_id=? and ingredients_id=?
+2020-03-09 11:31:33.782 DEBUG 14552 --- [main] o.h.p.c.AbstractCollectionPersister      :  One-shot delete: delete from taco_ingredients where taco_id=?
+2020-03-09 11:31:33.785 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: tacos.Order
+2020-03-09 11:31:33.785 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from taco_order where id =?
+2020-03-09 11:31:33.785 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select order_.id, order_.cccvv as cccvv2_3_, order_.cc_expiration as cc_expir3_3_, order_.cc_number as cc_numbe4_3_, order_.delivery_city as delivery5_3_, order_.delivery_name as delivery6_3_, order_.delivery_state as delivery7_3_, order_.delivery_street as delivery8_3_, order_.delivery_zip as delivery9_3_, order_.placed_at as placed_10_3_, order_.user_id as user_id11_3_ from taco_order order_ where order_.id=?
+2020-03-09 11:31:33.785 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into taco_order (cccvv, cc_expiration, cc_number, delivery_city, delivery_name, delivery_state, delivery_street, delivery_zip, placed_at, user_id, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-03-09 11:31:33.785 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Update 0: update taco_order set cccvv=?, cc_expiration=?, cc_number=?, delivery_city=?, delivery_name=?, delivery_state=?, delivery_street=?, delivery_zip=?, placed_at=?, user_id=? where id=?
+2020-03-09 11:31:33.785 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from taco_order where id=?
+2020-03-09 11:31:33.820 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5ac646b3]
+2020-03-09 11:31:33.821 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ccCVV
+2020-03-09 11:31:33.821 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ccExpiration
+2020-03-09 11:31:33.821 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ccNumber
+2020-03-09 11:31:33.821 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : deliveryCity
+2020-03-09 11:31:33.821 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : deliveryName
+2020-03-09 11:31:33.821 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : deliveryState
+2020-03-09 11:31:33.821 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : deliveryStreet
+2020-03-09 11:31:33.821 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : deliveryZip
+2020-03-09 11:31:33.821 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : placedAt
+2020-03-09 11:31:33.822 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : tacos
+2020-03-09 11:31:33.828 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@28bc9749]
+2020-03-09 11:31:33.831 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1c98fe6f]
+2020-03-09 11:31:33.832 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user
+2020-03-09 11:31:33.832 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@30b9728f]
+2020-03-09 11:31:33.834 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.city
+2020-03-09 11:31:33.834 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.fullname
+2020-03-09 11:31:33.834 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.password
+2020-03-09 11:31:33.834 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.phoneNumber
+2020-03-09 11:31:33.834 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.state
+2020-03-09 11:31:33.834 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.street
+2020-03-09 11:31:33.834 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.username
+2020-03-09 11:31:33.834 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.zip
+2020-03-09 11:31:33.834 DEBUG 14552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2020-03-09 11:31:33.848 DEBUG 14552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2020-03-09 11:31:33.852 DEBUG 14552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=tacos.Order)
+    - Returns
+       - EntityReturnImpl(entity=tacos.Order, querySpaceUid=<gen:0>, path=tacos.Order)
+          - CollectionAttributeFetchImpl(collection=tacos.Order.tacos, querySpaceUid=<gen:1>, path=tacos.Order.tacos)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=tacos.Taco, querySpaceUid=<gen:2>, path=tacos.Order.tacos.<elements>)
+          - EntityAttributeFetchImpl(entity=tacos.User, querySpaceUid=<gen:3>, path=tacos.Order.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=tacos.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=tacos.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_5_1_}
+
+2020-03-09 11:31:33.855 DEBUG 14552 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity tacos.Order [NONE]: select order0_.id as id1_3_0_, order0_.cccvv as cccvv2_3_0_, order0_.cc_expiration as cc_expir3_3_0_, order0_.cc_number as cc_numbe4_3_0_, order0_.delivery_city as delivery5_3_0_, order0_.delivery_name as delivery6_3_0_, order0_.delivery_state as delivery7_3_0_, order0_.delivery_street as delivery8_3_0_, order0_.delivery_zip as delivery9_3_0_, order0_.placed_at as placed_10_3_0_, order0_.user_id as user_id11_3_0_, user1_.id as id1_5_1_, user1_.city as city2_5_1_, user1_.fullname as fullname3_5_1_, user1_.password as password4_5_1_, user1_.phone_number as phone_nu5_5_1_, user1_.state as state6_5_1_, user1_.street as street7_5_1_, user1_.username as username8_5_1_, user1_.zip as zip9_5_1_ from taco_order order0_ left outer join user user1_ on order0_.user_id=user1_.id where order0_.id=?
+2020-03-09 11:31:33.855 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@bd28c86]
+2020-03-09 11:31:33.855 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ccCVV
+2020-03-09 11:31:33.855 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ccExpiration
+2020-03-09 11:31:33.855 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ccNumber
+2020-03-09 11:31:33.855 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : deliveryCity
+2020-03-09 11:31:33.855 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : deliveryName
+2020-03-09 11:31:33.855 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : deliveryState
+2020-03-09 11:31:33.855 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : deliveryStreet
+2020-03-09 11:31:33.855 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : deliveryZip
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : placedAt
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : tacos
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3340ce58]
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@14499b52]
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@be083e1]
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.city
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.fullname
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.password
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.phoneNumber
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.state
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.street
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.username
+2020-03-09 11:31:33.856 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : user.zip
+2020-03-09 11:31:33.857 DEBUG 14552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2020-03-09 11:31:33.857 DEBUG 14552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2020-03-09 11:31:33.857 DEBUG 14552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=tacos.Order)
+    - Returns
+       - EntityReturnImpl(entity=tacos.Order, querySpaceUid=<gen:0>, path=tacos.Order)
+          - CollectionAttributeFetchImpl(collection=tacos.Order.tacos, querySpaceUid=<gen:1>, path=tacos.Order.tacos)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=tacos.Taco, querySpaceUid=<gen:2>, path=tacos.Order.tacos.<elements>)
+          - EntityAttributeFetchImpl(entity=tacos.User, querySpaceUid=<gen:3>, path=tacos.Order.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=tacos.Order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=tacos.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_5_1_}
+
+2020-03-09 11:31:33.857 DEBUG 14552 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity tacos.Order [READ]: select order0_.id as id1_3_0_, order0_.cccvv as cccvv2_3_0_, order0_.cc_expiration as cc_expir3_3_0_, order0_.cc_number as cc_numbe4_3_0_, order0_.delivery_city as delivery5_3_0_, order0_.delivery_name as delivery6_3_0_, order0_.delivery_state as delivery7_3_0_, order0_.delivery_street as delivery8_3_0_, order0_.delivery_zip as delivery9_3_0_, order0_.placed_at as placed_10_3_0_, order0_.user_id as user_id11_3_0_, user1_.id as id1_5_1_, user1_.city as city2_5_1_, user1_.fullname as fullname3_5_1_, user1_.password as password4_5_1_, user1_.phone_number as phone_nu5_5_1_, user1_.state as state6_5_1_, user1_.street as street7_5_1_, user1_.username as username8_5_1_, user1_.zip as zip9_5_1_ from taco_order order0_ left outer join user user1_ on order0_.user_id=user1_.id where order0_.id=?
+2020-03-09 11:31:33.874 DEBUG 14552 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity tacos.Order: select order0_.id as id1_3_0_, order0_.cccvv as cccvv2_3_0_, order0_.cc_expiration as cc_expir3_3_0_, order0_.cc_number as cc_numbe4_3_0_, order0_.delivery_city as delivery5_3_0_, order0_.delivery_name as delivery6_3_0_, order0_.delivery_state as delivery7_3_0_, order0_.delivery_street as delivery8_3_0_, order0_.delivery_zip as delivery9_3_0_, order0_.placed_at as placed_10_3_0_, order0_.user_id as user_id11_3_0_ from taco_order order0_ where order0_.id=?
+2020-03-09 11:31:33.874 DEBUG 14552 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity tacos.Order: select order0_.id as id1_3_0_, order0_.cccvv as cccvv2_3_0_, order0_.cc_expiration as cc_expir3_3_0_, order0_.cc_number as cc_numbe4_3_0_, order0_.delivery_city as delivery5_3_0_, order0_.delivery_name as delivery6_3_0_, order0_.delivery_state as delivery7_3_0_, order0_.delivery_street as delivery8_3_0_, order0_.delivery_zip as delivery9_3_0_, order0_.placed_at as placed_10_3_0_, order0_.user_id as user_id11_3_0_ from taco_order order0_ where order0_.id=?
+2020-03-09 11:31:33.875 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: tacos.User
+2020-03-09 11:31:33.875 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from user where id =?
+2020-03-09 11:31:33.875 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select user_.id, user_.city as city2_5_, user_.fullname as fullname3_5_, user_.password as password4_5_, user_.phone_number as phone_nu5_5_, user_.state as state6_5_, user_.street as street7_5_, user_.username as username8_5_, user_.zip as zip9_5_ from user user_ where user_.id=?
+2020-03-09 11:31:33.875 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into user (city, fullname, password, phone_number, state, street, username, zip, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-03-09 11:31:33.875 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Update 0: update user set city=?, fullname=?, password=?, phone_number=?, state=?, street=?, username=?, zip=? where id=?
+2020-03-09 11:31:33.875 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from user where id=?
+2020-03-09 11:31:33.875 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b529d7e]
+2020-03-09 11:31:33.875 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city
+2020-03-09 11:31:33.875 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : fullname
+2020-03-09 11:31:33.875 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : phoneNumber
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : state
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : street
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : username
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : zip
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=tacos.User)
+    - Returns
+       - EntityReturnImpl(entity=tacos.User, querySpaceUid=<gen:0>, path=tacos.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=tacos.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity tacos.User [NONE]: select user0_.id as id1_5_0_, user0_.city as city2_5_0_, user0_.fullname as fullname3_5_0_, user0_.password as password4_5_0_, user0_.phone_number as phone_nu5_5_0_, user0_.state as state6_5_0_, user0_.street as street7_5_0_, user0_.username as username8_5_0_, user0_.zip as zip9_5_0_ from user user0_ where user0_.id=?
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@40aad17d]
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : fullname
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : phoneNumber
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : state
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : street
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : username
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : zip
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2020-03-09 11:31:33.876 DEBUG 14552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2020-03-09 11:31:33.877 DEBUG 14552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=tacos.User)
+    - Returns
+       - EntityReturnImpl(entity=tacos.User, querySpaceUid=<gen:0>, path=tacos.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=tacos.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+2020-03-09 11:31:33.877 DEBUG 14552 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity tacos.User [READ]: select user0_.id as id1_5_0_, user0_.city as city2_5_0_, user0_.fullname as fullname3_5_0_, user0_.password as password4_5_0_, user0_.phone_number as phone_nu5_5_0_, user0_.state as state6_5_0_, user0_.street as street7_5_0_, user0_.username as username8_5_0_, user0_.zip as zip9_5_0_ from user user0_ where user0_.id=?
+2020-03-09 11:31:33.877 DEBUG 14552 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity tacos.User: select user0_.id as id1_5_0_, user0_.city as city2_5_0_, user0_.fullname as fullname3_5_0_, user0_.password as password4_5_0_, user0_.phone_number as phone_nu5_5_0_, user0_.state as state6_5_0_, user0_.street as street7_5_0_, user0_.username as username8_5_0_, user0_.zip as zip9_5_0_ from user user0_ where user0_.id=?
+2020-03-09 11:31:33.877 DEBUG 14552 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity tacos.User: select user0_.id as id1_5_0_, user0_.city as city2_5_0_, user0_.fullname as fullname3_5_0_, user0_.password as password4_5_0_, user0_.phone_number as phone_nu5_5_0_, user0_.state as state6_5_0_, user0_.street as street7_5_0_, user0_.username as username8_5_0_, user0_.zip as zip9_5_0_ from user user0_ where user0_.id=?
+2020-03-09 11:31:33.877 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: tacos.Taco
+2020-03-09 11:31:33.877 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from taco where id =?
+2020-03-09 11:31:33.877 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select taco_.id, taco_.created_at as created_2_1_, taco_.name as name3_1_ from taco taco_ where taco_.id=?
+2020-03-09 11:31:33.877 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into taco (created_at, name, id) values (?, ?, ?)
+2020-03-09 11:31:33.877 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Update 0: update taco set created_at=?, name=? where id=?
+2020-03-09 11:31:33.877 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from taco where id=?
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5bc14211]
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : createdAt
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ingredients
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5d2e65bd]
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@254513e8]
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=tacos.Taco)
+    - Returns
+       - EntityReturnImpl(entity=tacos.Taco, querySpaceUid=<gen:0>, path=tacos.Taco)
+          - CollectionAttributeFetchImpl(collection=tacos.Taco.ingredients, querySpaceUid=<gen:1>, path=tacos.Taco.ingredients)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=tacos.Ingredient, querySpaceUid=<gen:2>, path=tacos.Taco.ingredients.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=tacos.Taco)
+          - SQL table alias mapping - taco0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity tacos.Taco [NONE]: select taco0_.id as id1_1_0_, taco0_.created_at as created_2_1_0_, taco0_.name as name3_1_0_ from taco taco0_ where taco0_.id=?
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@74450c9b]
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : createdAt
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ingredients
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5ad50b02]
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@570299e3]
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2020-03-09 11:31:33.878 DEBUG 14552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=tacos.Taco)
+    - Returns
+       - EntityReturnImpl(entity=tacos.Taco, querySpaceUid=<gen:0>, path=tacos.Taco)
+          - CollectionAttributeFetchImpl(collection=tacos.Taco.ingredients, querySpaceUid=<gen:1>, path=tacos.Taco.ingredients)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=tacos.Ingredient, querySpaceUid=<gen:2>, path=tacos.Taco.ingredients.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=tacos.Taco)
+          - SQL table alias mapping - taco0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity tacos.Taco [READ]: select taco0_.id as id1_1_0_, taco0_.created_at as created_2_1_0_, taco0_.name as name3_1_0_ from taco taco0_ where taco0_.id=?
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity tacos.Taco: select taco0_.id as id1_1_0_, taco0_.created_at as created_2_1_0_, taco0_.name as name3_1_0_ from taco taco0_ where taco0_.id=?
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity tacos.Taco: select taco0_.id as id1_1_0_, taco0_.created_at as created_2_1_0_, taco0_.name as name3_1_0_ from taco taco0_ where taco0_.id=?
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: tacos.Ingredient
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from ingredient where id =?
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select ingredient_.id, ingredient_.name as name2_0_, ingredient_.type as type3_0_ from ingredient ingredient_ where ingredient_.id=?
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into ingredient (name, type, id) values (?, ?, ?)
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Update 0: update ingredient set name=?, type=? where id=?
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from ingredient where id=?
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@bff764c]
+2020-03-09 11:31:33.879 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2020-03-09 11:31:33.880 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : type
+2020-03-09 11:31:33.880 DEBUG 14552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2020-03-09 11:31:33.880 DEBUG 14552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2020-03-09 11:31:33.880 DEBUG 14552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=tacos.Ingredient)
+    - Returns
+       - EntityReturnImpl(entity=tacos.Ingredient, querySpaceUid=<gen:0>, path=tacos.Ingredient)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=tacos.Ingredient)
+          - SQL table alias mapping - ingredient0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-03-09 11:31:33.880 DEBUG 14552 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity tacos.Ingredient [NONE]: select ingredient0_.id as id1_0_0_, ingredient0_.name as name2_0_0_, ingredient0_.type as type3_0_0_ from ingredient ingredient0_ where ingredient0_.id=?
+2020-03-09 11:31:33.880 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@49153009]
+2020-03-09 11:31:33.880 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2020-03-09 11:31:33.880 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : type
+2020-03-09 11:31:33.880 DEBUG 14552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2020-03-09 11:31:33.881 DEBUG 14552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2020-03-09 11:31:33.881 DEBUG 14552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=tacos.Ingredient)
+    - Returns
+       - EntityReturnImpl(entity=tacos.Ingredient, querySpaceUid=<gen:0>, path=tacos.Ingredient)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=tacos.Ingredient)
+          - SQL table alias mapping - ingredient0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-03-09 11:31:33.881 DEBUG 14552 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity tacos.Ingredient [READ]: select ingredient0_.id as id1_0_0_, ingredient0_.name as name2_0_0_, ingredient0_.type as type3_0_0_ from ingredient ingredient0_ where ingredient0_.id=?
+2020-03-09 11:31:33.881 DEBUG 14552 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity tacos.Ingredient: select ingredient0_.id as id1_0_0_, ingredient0_.name as name2_0_0_, ingredient0_.type as type3_0_0_ from ingredient ingredient0_ where ingredient0_.id=?
+2020-03-09 11:31:33.881 DEBUG 14552 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity tacos.Ingredient: select ingredient0_.id as id1_0_0_, ingredient0_.name as name2_0_0_, ingredient0_.type as type3_0_0_ from ingredient ingredient0_ where ingredient0_.id=?
+2020-03-09 11:31:33.888 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3b576ee3]
+2020-03-09 11:31:33.889 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@705d914f]
+2020-03-09 11:31:33.890 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : createdAt
+2020-03-09 11:31:33.891 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : ingredients
+2020-03-09 11:31:33.891 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@e18d2a2]
+2020-03-09 11:31:33.891 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1a77eb6]
+2020-03-09 11:31:33.891 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2020-03-09 11:31:33.891 DEBUG 14552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2020-03-09 11:31:33.895 DEBUG 14552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2020-03-09 11:31:33.896 DEBUG 14552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(collection=tacos.Order.tacos)
+    - Returns
+       - CollectionReturnImpl(collection=tacos.Order.tacos, querySpaceUid=<gen:0>, path=[tacos.Order.tacos])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=tacos.Taco, querySpaceUid=<gen:1>, path=[tacos.Order.tacos].<elements>)
+             - CollectionAttributeFetchImpl(collection=tacos.Taco.ingredients, querySpaceUid=<gen:2>, path=[tacos.Order.tacos].<elements>.ingredients)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=tacos.Ingredient, querySpaceUid=<gen:3>, path=[tacos.Order.tacos].<elements>.ingredients.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=tacos.Order.tacos)
+          - SQL table alias mapping - tacos0_
+          - alias suffix - 0_
+          - suffixed key columns - {order_id1_4_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=tacos.Taco)
+                - SQL table alias mapping - taco1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+2020-03-09 11:31:33.897 DEBUG 14552 --- [main] o.h.l.collection.plan.CollectionLoader   : Static select for collection tacos.Order.tacos: select tacos0_.order_id as order_id1_4_0_, tacos0_.tacos_id as tacos_id2_4_0_, taco1_.id as id1_1_1_, taco1_.created_at as created_2_1_1_, taco1_.name as name3_1_1_ from taco_order_tacos tacos0_ inner join taco taco1_ on tacos0_.tacos_id=taco1_.id where tacos0_.order_id=?
+2020-03-09 11:31:33.897 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@41bbb219]
+2020-03-09 11:31:33.897 DEBUG 14552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3f2ae973]
+2020-03-09 11:31:33.897 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2020-03-09 11:31:33.897 DEBUG 14552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : type
+2020-03-09 11:31:33.897 DEBUG 14552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2020-03-09 11:31:33.897 DEBUG 14552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2020-03-09 11:31:33.898 DEBUG 14552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(collection=tacos.Taco.ingredients)
+    - Returns
+       - CollectionReturnImpl(collection=tacos.Taco.ingredients, querySpaceUid=<gen:0>, path=[tacos.Taco.ingredients])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=tacos.Ingredient, querySpaceUid=<gen:1>, path=[tacos.Taco.ingredients].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=tacos.Taco.ingredients)
+          - SQL table alias mapping - ingredient0_
+          - alias suffix - 0_
+          - suffixed key columns - {taco_id1_2_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=tacos.Ingredient)
+                - SQL table alias mapping - ingredient1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+2020-03-09 11:31:33.898 DEBUG 14552 --- [main] o.h.l.collection.plan.CollectionLoader   : Static select for collection tacos.Taco.ingredients: select ingredient0_.taco_id as taco_id1_2_0_, ingredient0_.ingredients_id as ingredie2_2_0_, ingredient1_.id as id1_0_1_, ingredient1_.name as name2_0_1_, ingredient1_.type as type3_0_1_ from taco_ingredients ingredient0_ inner join ingredient ingredient1_ on ingredient0_.ingredients_id=ingredient1_.id where ingredient0_.taco_id=?
+2020-03-09 11:31:33.926 DEBUG 14552 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum tacos.Ingredient$Type
+2020-03-09 11:31:33.927 DEBUG 14552 --- [main] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum tacos.Ingredient$Type
+2020-03-09 11:31:34.015 DEBUG 14552 --- [main] org.hibernate.mapping.Table              : No alter strings for table : hibernate_sequence
+2020-03-09 11:31:34.016 DEBUG 14552 --- [main] org.hibernate.mapping.Table              : No alter strings for table : ingredient
+2020-03-09 11:31:34.016 DEBUG 14552 --- [main] org.hibernate.mapping.Table              : No alter strings for table : taco
+2020-03-09 11:31:34.016 DEBUG 14552 --- [main] org.hibernate.mapping.Table              : No alter strings for table : taco_ingredients
+2020-03-09 11:31:34.016 DEBUG 14552 --- [main] org.hibernate.mapping.Table              : No alter strings for table : taco_order
+2020-03-09 11:31:34.016 DEBUG 14552 --- [main] org.hibernate.mapping.Table              : No alter strings for table : taco_order_tacos
+2020-03-09 11:31:34.016 DEBUG 14552 --- [main] org.hibernate.mapping.Table              : No alter strings for table : user
+2020-03-09 11:31:34.019 DEBUG 14552 --- [main] org.hibernate.SQL                        : alter table taco_ingredients add constraint FK7y679y77n5e75s3ss1v7ff14j foreign key (ingredients_id) references ingredient (id)
+2020-03-09 11:31:34.047 DEBUG 14552 --- [main] org.hibernate.SQL                        : alter table taco_ingredients add constraint FK27rycuh3mjaepnba0j6m8xl4q foreign key (taco_id) references taco (id)
+2020-03-09 11:31:34.060 DEBUG 14552 --- [main] org.hibernate.SQL                        : alter table taco_order add constraint FK1e7afaasuwdukhtillc612bvg foreign key (user_id) references user (id)
+2020-03-09 11:31:34.072 DEBUG 14552 --- [main] org.hibernate.SQL                        : alter table taco_order_tacos add constraint FKfwvqtnjfview9e5f7bfqtd1ns foreign key (tacos_id) references taco (id)
+2020-03-09 11:31:34.084 DEBUG 14552 --- [main] org.hibernate.SQL                        : alter table taco_order_tacos add constraint FKcxwvdkndaqmrxcen10vkneexo foreign key (order_id) references taco_order (id)
+2020-03-09 11:31:34.096  INFO 14552 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-09 11:31:34.098 DEBUG 14552 --- [main] o.h.query.spi.NamedQueryRepository       : Checking 0 named HQL queries
+2020-03-09 11:31:34.098 DEBUG 14552 --- [main] o.h.query.spi.NamedQueryRepository       : Checking 0 named SQL queries
+2020-03-09 11:31:34.105 DEBUG 14552 --- [main] o.h.internal.SessionFactoryRegistry      : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@813ab53
+2020-03-09 11:31:34.105 DEBUG 14552 --- [main] o.h.internal.SessionFactoryRegistry      : Registering SessionFactory: 345e70d8-4ae9-4217-8782-a638ecd71b3d (<unnamed>)
+2020-03-09 11:31:34.105 DEBUG 14552 --- [main] o.h.internal.SessionFactoryRegistry      : Not binding SessionFactory to JNDI, no JNDI name configured
+2020-03-09 11:31:34.105  INFO 14552 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 11:31:34.335 DEBUG 14552 --- [main] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=false]
+2020-03-09 11:31:34.504 DEBUG 14552 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-03-09 11:31:34.662  WARN 14552 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-09 11:31:34.816 DEBUG 14552 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-03-09 11:31:35.198 DEBUG 14552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2020-03-09 11:31:35.198 DEBUG 14552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2020-03-09 11:31:35.198 DEBUG 14552 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2020-03-09 11:31:35.206 DEBUG 14552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2020-03-09 11:31:35.206 DEBUG 14552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2020-03-09 11:31:35.207 DEBUG 14552 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-09 11:31:35.208 DEBUG 14552 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-09 11:31:35.208 DEBUG 14552 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-09 11:31:35.209 DEBUG 14552 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-09 11:31:35.210 DEBUG 14552 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2020-03-09 11:31:35.210 DEBUG 14552 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2020-03-09 11:31:35.210 DEBUG 14552 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-09 11:31:35.210 DEBUG 14552 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-09 11:31:35.214 DEBUG 14552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-09 11:31:35.214 DEBUG 14552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-09 11:31:35.214 DEBUG 14552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-09 11:31:35.215 DEBUG 14552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-09 11:31:35.215 DEBUG 14552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-09 11:31:35.498  INFO 14552 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:31:36.101  INFO 14552 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-09 11:31:36.338  INFO 14552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9818 (http) with context path ''
+2020-03-09 11:31:36.340  INFO 14552 --- [main] tacos.HomePageBrowserTest                : Started HomePageBrowserTest in 10.136 seconds (JVM running for 12.657)
+2020-03-09 11:31:36.652  INFO 14552 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-09 11:31:36.652  INFO 14552 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-09 11:31:36.687  INFO 14552 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2020-03-09 11:31:37.202  INFO 14552 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-09 11:31:37.204  INFO 14552 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-09 11:31:37.205 DEBUG 14552 --- [SpringContextShutdownHook] o.hibernate.internal.SessionFactoryImpl  : HHH000031: Closing
+2020-03-09 11:31:37.205 DEBUG 14552 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@5d2b8d01] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@71734463]
+2020-03-09 11:31:37.207 DEBUG 14552 --- [SpringContextShutdownHook] o.h.s.i.AbstractServiceRegistryImpl      : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2020-03-09 11:31:37.207 DEBUG 14552 --- [SpringContextShutdownHook] o.h.b.r.i.BootstrapServiceRegistryImpl   : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2020-03-09 11:31:37.208  INFO 14552 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-09 11:31:37.221  INFO 14552 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
